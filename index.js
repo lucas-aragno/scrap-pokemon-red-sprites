@@ -3,9 +3,8 @@ const request = require('request');
 
 const download = function(uri, filename, callback){
   request.head(uri, function(err, res, body){
-    console.log('content-type:', res.headers['content-type']);
-    console.log('content-length:', res.headers['content-length']);
 
+    console.log('download ', uri )
     request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
   });
 };
@@ -176,7 +175,7 @@ const POKEMONS = [
    
   "Magneton",
    
-  "Farfetch'd",
+  "Farfetchd",
    
   "Doduo",
    

@@ -238,7 +238,7 @@ const POKEMONS = [
   "Flareon",
   "Jolteon",
   "Porygon",
-  "Omanite",
+  "Omanyte",
   "Omastar",
   "Kabuto",
   "Kabutops",
